@@ -40,7 +40,7 @@ class PengadaanController extends Controller
         return view('pages.create');
     }
 
-        public function proyekCreate()
+    public function proyekCreate()
     {
         return view('persiapan_pengadaan.tab1_create');
     }
