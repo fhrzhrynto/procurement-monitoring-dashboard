@@ -4,7 +4,7 @@
 
 ## Screenshots
 
-![Dashboard](screenshots/MainDashboard.png)
+![Dashboard](screenshots/MainDashboard.png?v=2)
 
 ![Planning Page](screenshots/PlanningPage.png)
 
