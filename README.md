@@ -131,6 +131,32 @@ Grafik distribusi penagihan dan tren pengadaan dihitung dari data yang tersimpan
 
 **Catatan instalasi:** Langkah di atas merupakan panduan awal. Kebutuhan data awal, file pendukung, konfigurasi tambahan, dan akun pengguna perlu diverifikasi sebelum instalasi dapat dianggap lengkap.
 
+### Membuat Akun Admin
+
+Setelah konfigurasi database selesai dan migrasi telah dijalankan, buat akun admin untuk login ke aplikasi.
+
+1. Buka terminal pada direktori proyek Laravel.
+2. Jalankan perintah berikut untuk membuka Laravel Tinker:
+
+   ```bash
+   php artisan tinker
+   ```
+
+3. Jalankan kode berikut di dalam Tinker:
+
+   ```php
+   \App\Models\User::create([
+       'name' => 'Admin',
+       'email' => 'admin@example.com',
+       'password' => \Illuminate\Support\Facades\Hash::make('Admin123')
+   ]);
+   ```
+
+4. Setelah akun berhasil dibuat, login melalui halaman login aplikasi menggunakan email dan password yang telah ditentukan.
+
+**Catatan keamanan:** Kredensial di atas ditujukan untuk keperluan demonstrasi lokal. Gunakan password yang berbeda dan kuat untuk penggunaan sebenarnya. Jangan gunakan kredensial contoh ini pada lingkungan produksi.
+
+
 ### Catatan Publikasi
 
 Repositori ini ditujukan untuk dokumentasi portofolio pengembangan. Data aktual perusahaan, kredensial, dan informasi internal tidak disertakan. Publikasi source code dan materi pendukung tetap mengikuti izin serta ketentuan yang berlaku.
@@ -265,6 +291,31 @@ Billing distribution and procurement trend charts are generated from data stored
    Open the local address displayed in the terminal.
 
 **Setup note:** These instructions are preliminary. Seed data, supporting files, additional configuration, and user account setup must be verified before the installation guide can be considered complete.
+
+### Creating an Admin Account
+
+After configuring the database and running the migrations, create an admin account to log in to the application.
+
+1. Open a terminal in the Laravel project directory.
+2. Run the following command to launch Laravel Tinker:
+
+   ```bash
+   php artisan tinker
+   ```
+
+3. Execute the following code inside Tinker:
+
+   ```php
+   \App\Models\User::create([
+       'name' => 'Admin',
+       'email' => 'admin@example.com',
+       'password' => \Illuminate\Support\Facades\Hash::make('Admin123')
+   ]);
+   ```
+
+4. Once the account has been created successfully, log in through the application's login page using the email address and password specified above.
+
+**Security Note:** The credentials above are intended for local demonstration purposes only. Use a different, strong password for actual use. Do not use these example credentials in a production environment.
 
 ### Publication Note
 
