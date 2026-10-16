@@ -2,6 +2,14 @@
 
 **Laravel-based Web Application | Indonesia / English**
 
+## Screenshots
+
+![Dashboard](screenshots/MainDashboard.png)
+
+![Planning Page](screenshots/PlanningPage.png)
+
+![Pengadaan Page](screenshots/PengadaanPage.png)
+
 ## Tentang Proyek
 
 Procurement Monitoring Dashboard adalah aplikasi berbasis web yang dikembangkan dari awal sebagai bagian dari kegiatan Kerja Praktik (KP)/magang. Aplikasi ini dirancang untuk membantu pemantauan proses pengadaan melalui dashboard terpusat, mulai dari perencanaan pengadaan hingga monitoring kontrak, penerimaan barang, kelengkapan dokumen, dan penyerapan anggaran.
