@@ -8,7 +8,7 @@
 
 ![Planning Page](screenshots/PlanningPage.png)
 
-![Pengadaan Page](screenshots/PengadaanPage.png)
+![Pengadaan Kontrak Page](screenshots/PengadaanPage.png?v=2)
 
 ## Tentang Proyek
 
